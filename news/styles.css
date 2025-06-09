@@ -1,0 +1,56 @@
+/* Reset visual básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    color: #333;
+}
+
+/* Cabecera con logo */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+/* Contenedor de noticias */
+.noticias {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Cada noticia */
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+article h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
