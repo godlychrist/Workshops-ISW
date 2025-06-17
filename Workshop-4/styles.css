@@ -1,0 +1,71 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #111;
+    
+}
+
+.logo {
+    height: 125px;
+    width: 125px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    flex-wrap: wrap; /* hace que se acomode mejor en pantallas pequeñas */
+}
+
+.shirt {
+    height: 800px;
+    width: 800px;
+}
+
+.principal {
+    color: white;
+    max-width: 500px;
+}
+
+.shop-button {
+    background-color: #fff; /* fondo blanco */
+    color: #333; /* color del texto, para contraste */
+    width: 500px; /* más moderado que 500px */
+    height: 70px;  /* tamaño alto pero no tanto */
+    border: 3px double #666; /* borde doble gris oscuro */
+    border-radius: 12px; /* bordes redondeados para suavizar */
+    font-size: 24px; /* texto más grande y legible */
+    font-weight: bold;
+    cursor: pointer; /* cambia cursor al pasar */
+    padding: 0 20px; /* espacio interno horizontal */
+    transition: background-color 0.3s, color 0.3s; /* animación suave */
+}
+
+.shop-button:hover {
+    background-color: #333; /* fondo oscuro al pasar mouse */
+    color: #fff; /* texto blanco al pasar mouse */
+    border-color: #fff; /* borde blanco al pasar mouse */
+}
+
+
+h1, p {
+    color: white;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
