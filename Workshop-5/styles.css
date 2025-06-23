@@ -1,85 +1,106 @@
-/* Global */
 :root {
-  --main-bg: black;
-  --main-text: white;
-  --accent: red;
-  --hover-bg: #333;
+  --main-bg: #000;
+  --main-text: #fff;
+  --accent: #e74c3c;
+  --hover-bg: #222;
   --button-text: #333;
 }
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
   background-color: var(--main-bg);
   color: var(--main-text);
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* Nav bar */
+/* Header */
 .nav-bar {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 30px;
+  padding: 20px 40px;
   background-color: #111;
+  font-size: 18px;
 }
 
 .logo {
-  height: 125px;
-  width: 125px;
+  height: 100px;
+  width: 100px;
 }
 
-/* Main layout */
+/* Layout */
 .contenedor {
   display: flex;
-  align-items: center;
-  gap: 50px;
-  padding: 50px;
   flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px;
+  justify-content: center;
 }
 
 .shirt {
-  height: 800px;
-  width: 800px;
+  width: 400px;
+  border-radius: 12px;
 }
 
 .principal {
   max-width: 500px;
 }
 
+/* Title with ID selector + pseudo-elements */
+#title {
+  font-size: 32px;
+  color: var(--accent);
+}
+
+#title::before {
+  content: "🔥 ";
+}
+
+#title::after {
+  content: " 🔥";
+}
+
 /* Button */
 .shop-button {
   background-color: white;
   color: var(--button-text);
-  width: 500px;
-  height: 70px;
-  border: 3px double #666;
-  border-radius: 12px;
-  font-size: 24px;
+  width: 100%;
+  height: 60px;
+  border: 2px solid var(--hover-bg);
+  border-radius: 10px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  padding: 0 20px;
-  transition: background-color 0.3s, color 0.3s;
+  margin-top: 20px;
+  transition: all 0.3s ease;
 }
 
-/* ✅ :hover */
 .shop-button:hover {
   background-color: var(--hover-bg);
   color: white;
   border-color: white;
 }
 
-/* ✅ :active */
 .shop-button:active {
   transform: scale(0.98);
-  background-color: red;
+  background-color: var(--accent);
 }
 
-/* ✅ :focus */
+/* Inputs + combined selector + pseudo-classes */
+input[type="text"].required {
+  border: 2px solid var(--accent);
+  padding: 8px;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 input:focus {
-  outline: 2px solid yellow;
+  outline: 2px solid lime;
 }
 
-/* ✅ :enabled and :disabled */
 input:enabled {
   background-color: #222;
   color: white;
@@ -87,63 +108,60 @@ input:enabled {
 
 input:disabled {
   background-color: #555;
-  color: gray;
+  color: #aaa;
 }
 
-/* ✅ :checked */
 input:checked {
-  outline: 2px solid lime;
+  box-shadow: 0 0 0 2px lime;
 }
 
-/* ✅ :first-child, :last-child, :nth-child, :only-child */
+/* Paragraph with pseudo-element */
+.test::first-letter {
+  font-size: 26px;
+  color: yellow;
+  font-weight: bold;
+}
+
+/* List styles */
+ul > li {
+  list-style-type: square;
+}
+
+/* Estructurales */
 ul li:first-child {
   color: red;
 }
-
 ul li:last-child {
   color: orange;
 }
-
 ul li:nth-child(2) {
   font-style: italic;
 }
 
-ul:only-child {
-  border: 2px dashed green;
-}
-
-/* ✅ ::first-letter */
-.test::first-letter {
-  font-size: 30px;
-  color: yellow;
-}
-
-/* ✅ :target */
-.target-box {
-  margin-top: 50px;
-  padding: 20px;
-  background-color: #444;
-} 
-
-/* Link states */
-a:link {
-  color: cyan;
-}
-
-a:visited {
-  color: purple;
-}
-
-/* Negación */
+/* :not() selector */
 ul li:not(:first-child) {
   text-decoration: underline;
 }
 
-/* Pseudo-elementos before/after */
-h1::before {
-  content: "🔥 ";
+/* Group selector */
+h1, p, button {
+  font-family: 'Segoe UI', sans-serif;
 }
 
-h1::after {
-  content: " 🔥";
+/* Enlace con :link y :visited */
+a:link {
+  color: cyan;
+  text-decoration: none;
+}
+a:visited {
+  color: violet;
+}
+
+/* :target */
+.target-box {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #333;
+  border-left: 4px solid lime;
+  font-weight: bold;
 }
