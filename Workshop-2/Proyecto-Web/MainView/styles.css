@@ -1,0 +1,192 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.img-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 10px 40px;
+    width: 90%;
+    margin: 10px auto 0;
+    box-sizing: border-box;
+}
+
+
+.nav-left {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-left li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 20px;
+    display: block;
+
+}
+
+.nav-left a:hover {
+    background-color: aqua;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+
+}
+
+.icono-usuario {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px auto 0;
+    border: 1px solid black;
+    padding: 20px 40px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+/* Agrupar From y To en línea */
+.selects-container {
+    display: flex;
+    justify-content: center;
+    gap: 890px;
+    margin-right: 40px;
+}
+
+/* Si querés que los elementos estén bien alineados */
+.ride-places,
+.ride-destination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ride-destination a {
+    margin-top: 5px;
+    background-color: #6D8299;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+.table-container table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.table-container table {
+    width: 90%;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px; /* ✔️ ahora sí se separa del box-container */
+
+}
+
+.header-row {
+    background-color: #F0F0F0;
+}
+
+.google-maps-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto 0;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: white;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0;
+}
+
+.footer-top {
+    border-top: 1px solid #ccc;
+    width: 95%;
+    margin: 0px auto 10px;
+    /* 👈 agrega separación debajo de la línea */
+}
+
+.footer-content a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.search-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0;
+    font-size: 32px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+    width: 20%;
+    margin: 0 auto 10px;
+}

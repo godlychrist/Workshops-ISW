@@ -1,0 +1,149 @@
+/* Global */
+:root {
+  --main-bg: black;
+  --main-text: white;
+  --accent: red;
+  --hover-bg: #333;
+  --button-text: #333;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+}
+
+/* Nav bar */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #111;
+}
+
+.logo {
+  height: 125px;
+  width: 125px;
+}
+
+/* Main layout */
+.contenedor {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.shirt {
+  height: 800px;
+  width: 800px;
+}
+
+.principal {
+  max-width: 500px;
+}
+
+/* Button */
+.shop-button {
+  background-color: white;
+  color: var(--button-text);
+  width: 500px;
+  height: 70px;
+  border: 3px double #666;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ✅ :hover */
+.shop-button:hover {
+  background-color: var(--hover-bg);
+  color: white;
+  border-color: white;
+}
+
+/* ✅ :active */
+.shop-button:active {
+  transform: scale(0.98);
+  background-color: red;
+}
+
+/* ✅ :focus */
+input:focus {
+  outline: 2px solid yellow;
+}
+
+/* ✅ :enabled and :disabled */
+input:enabled {
+  background-color: #222;
+  color: white;
+}
+
+input:disabled {
+  background-color: #555;
+  color: gray;
+}
+
+/* ✅ :checked */
+input:checked {
+  outline: 2px solid lime;
+}
+
+/* ✅ :first-child, :last-child, :nth-child, :only-child */
+ul li:first-child {
+  color: red;
+}
+
+ul li:last-child {
+  color: orange;
+}
+
+ul li:nth-child(2) {
+  font-style: italic;
+}
+
+ul:only-child {
+  border: 2px dashed green;
+}
+
+/* ✅ ::first-letter */
+.test::first-letter {
+  font-size: 30px;
+  color: yellow;
+}
+
+/* ✅ :target */
+.target-box {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #444;
+} 
+
+/* Link states */
+a:link {
+  color: cyan;
+}
+
+a:visited {
+  color: purple;
+}
+
+/* Negación */
+ul li:not(:first-child) {
+  text-decoration: underline;
+}
+
+/* Pseudo-elementos before/after */
+h1::before {
+  content: "🔥 ";
+}
+
+h1::after {
+  content: " 🔥";
+}

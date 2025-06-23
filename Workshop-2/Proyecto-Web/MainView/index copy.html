@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <main class="main">
+
+        <div class="img-container">
+            <img src="logo.png" alt="Logo" class="imglogo">
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-left">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rides</a></li>
+                <li><a href="#">Bookings</a></li>
+            </ul>
+            <div class="nav-right">
+                <input type="text" placeholder="Search...">
+                <img src="user.png" alt="user" class="icono-usuario">
+            </div>
+        </nav>
+
+        <div class="rides-container">
+            <div class="box-container">
+                <div class="ride-places">
+                    <p> From <select class="from-rides">
+                            <option value="0"> Quesada</option>
+                        </select></p>
+                </div>
+
+                <div class="ride-destination">
+                    <p> To <select class="to-rides">
+                            <option value="0"> Zarcero </option>
+                        </select></p>
+                    <a href=""> Find Rides </a>
+
+                </div>
+
+
+                <div class="days-container">
+                    <p> Days </p>
+                    <div></div>
+                    <input type="checkbox" name="monday-checkbox" class="mon-checkbox">
+                    <label for="mon-checkbox" class="lbl-mon-checkbox"> Monday </label>
+
+                    <input type="checkbox" name="tuesday-checkbox" class="tue-checkbox">
+                    <label for="tue-checkbox" class="lbl-tue-checkbox"> Tuesday </label>
+
+                    <input type="checkbox" name="wednesday-checkbox" class="wed-checkbox">
+                    <label for="mon-checkbox" class="lbl-wed-checkbox"> Wednesday </label>
+
+                    <input type="checkbox" name="thursday-checkbox" class="thu-checkbox">
+                    <label for="mon-checkbox" class="lbl-thu-checkbox"> Thursday </label>
+
+                    <input type="checkbox" name="friday-checkbox" class="fri-checkbox">
+                    <label for="mon-checkbox" class="lbl-fri-checkbox"> Friday </label>
+
+                    <input type="checkbox" name="saturday-checkbox" class="sat-checkbox">
+                    <label for="mon-checkbox" class="lbl-sat-checkbox"> Saturday </label>
+
+                    <input type="checkbox" name="sunday-checkbox" class="sun-checkbox">
+                    <label for="mon-checkbox" class="lbl-sun-checkbox"> Sunday </label>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+</body>
+
+</html>

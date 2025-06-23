@@ -14,12 +14,12 @@ body {
 }
 
 /* Cabecera con logo */
-header {
+div {
     text-align: center;
     margin-bottom: 40px;
 }
 
-header img {
+div img {
     width: 200px;
     height: auto;
 }
@@ -54,3 +54,4 @@ article img {
     height: auto;
     border-radius: 5px;
 }
+

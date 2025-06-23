@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <main class="main">
+
+        <div class="img-container">
+            <img src="logo.png" alt="Logo" class="imglogo">
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-left">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rides</a></li>
+                <li><a href="#">Bookings</a></li>
+            </ul>
+            <div class="nav-right">
+                <input type="text" placeholder="Search...">
+                <img src="user.png" alt="user" class="icono-usuario">
+            </div>
+        </nav>
+
+        <p class="search-title"> Search Rides </p>
+        <div class="border-bottom"></div>
+
+        <div class="rides-container">
+            <div class="box-container">
+                <!-- Agrupar los selects -->
+                <div class="selects-container">
+                    <div class="ride-places">
+                        <p> From
+                            <select class="from-rides">
+                                <option value="0"> Quesada</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="ride-destination">
+                        <p> To
+                            <select class="to-rides">
+                                <option value="0"> Zarcero </option>
+                            </select>
+                        </p>
+                        <a href="#"> Find Rides </a>
+                    </div>
+                </div>
+
+                <!-- Checkboxes debajo -->
+                <div class="days-container">
+                    <p> Days </p>
+                    <div class="checkbox-grid">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="mon-checkbox" name="monday-checkbox" class="mon-checkbox">
+                            <label for="mon-checkbox" class="lbl-mon-checkbox">Monday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="tue-checkbox" name="tuesday-checkbox" class="tue-checkbox">
+                            <label for="tue-checkbox" class="lbl-tue-checkbox">Tuesday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="wed-checkbox" name="wednesday-checkbox" class="wed-checkbox">
+                            <label for="wed-checkbox" class="lbl-wed-checkbox">Wednesday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="thu-checkbox" name="thursday-checkbox" class="thu-checkbox">
+                            <label for="thu-checkbox" class="lbl-thu-checkbox">Thursday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="fri-checkbox" name="friday-checkbox" class="fri-checkbox">
+                            <label for="fri-checkbox" class="lbl-fri-checkbox">Friday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sat-checkbox" name="saturday-checkbox" class="sat-checkbox">
+                            <label for="sat-checkbox" class="lbl-sat-checkbox">Saturday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sun-checkbox" name="sunday-checkbox" class="sun-checkbox">
+                            <label for="sun-checkbox" class="lbl-sun-checkbox">Sunday</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="rides-found">
+                <tr class="header-row">
+                    <th> Driver </th>
+                    <th> From </th>
+                    <th> To </th>
+                    <th> Seats </th>
+                    <th> Car </th>
+                    <th> Fee </th>
+                    <th> Actions </th>
+                </tr>
+                <tr>
+                    <th> <img src="user.png" alt="user-logo" class="user-logo"> barroyo </th>
+                    <th> Quesada </th>
+                    <th> Alajuela </th>
+                    <th> 2 </th>
+                    <th> Nissan Pathfinder 2015 </th>
+                    <th> $5 </th>
+                    <th> Request </th>
+                </tr>
+                <tr>
+                    <th> <img src="user.png" alt="user-logo" class="user-logo"> barroyo </th>
+                    <th> Quesada </th>
+                    <th> Alajuela </th>
+                    <th> 1 </th>
+                    <th> Toyota Corolla 2020 </th>
+                    <th> $10 </th>
+                    <th> Request </th>
+                </tr>
+                <tr>
+                    <th> <img src="user.png" alt="user-logo" class="user-logo"> barroyo </th>
+                    <th> Aguas Zarcas </th>
+                    <th> Naranjo </th>
+                    <th> 1 </th>
+                    <th> Ford Festiva 1990 </th>
+                    <th> - </th>
+                    <th> Request </th>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="google-maps-image">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31400.308792339096!2d-84.45532325!3d10.338796199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa06f0d2cf38acd%3A0xb3e504046084c68b!2sECO%20CAMPUS%20UTN!5e0!3m2!1ses!2scr!4v1750345667611!5m2!1ses!2scr"
+                width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <footer>
+            <div class="footer-top"></div>
+                <div class="footer-content">
+                    <a href="#">Home</a> |
+                    <a href="#">Rides</a> |
+                    <a href="#">Bookings</a> |
+                    <a href="#">Settings</a> |
+                    <a href="#">Login</a> |
+                    <a href="#">Register</a>
+                </div>
+                <div class="footer-bottom">
+                    <span>© Aventones.com</span>
+                </div>
+            
+
+        </footer>
+
+
+
+
+
+    </main>
+
+
+</body>
+
+</html>
