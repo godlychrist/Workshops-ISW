@@ -1,0 +1,106 @@
+/* Fuente y colores básicos */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Encabezado */
+.header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Layout principal */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Perfil */
+.profile {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* Proyectos */
+.projects {
+  display: grid;
+  gap: 20px;
+  flex: 3 1 100%;
+}
+
+.project {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.project h2 {
+  margin-top: 0;
+}
+
+.project a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+/* === Media Queries === */
+
+/* Pantallas pequeñas: menos de 600px */
+@media (max-width: 599px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Pantallas medianas: 600px a 1024px */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile {
+    order: -1;
+  }
+}
+
+/* Pantallas grandes: más de 1024px */
+@media (min-width: 1025px) {
+  .main-container {
+    flex-direction: row;
+  }
+
+  .profile {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .projects {
+    flex: 3;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
